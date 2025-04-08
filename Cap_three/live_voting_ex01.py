@@ -73,3 +73,4 @@ else:
     else:
         print("Houve um empate entre os dias:", ', '.join(dia.lower() for dia in dias_vencedores[:-1]), "e",
               dias_vencedores[-1].lower() + ".")
+

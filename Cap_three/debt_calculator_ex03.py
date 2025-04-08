@@ -39,4 +39,3 @@ for parcelas in parcelas_lista:
     valor_parcela = valor_total / parcelas
 
     print(f"{parcelas:>14} | {valor_juros:>18.2f} | {valor_total:>22.2f} | {valor_parcela:>24.2f}")
-

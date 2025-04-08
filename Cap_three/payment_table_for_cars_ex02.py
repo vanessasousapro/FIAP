@@ -60,3 +60,4 @@ for parcelas in opcoes_parcelas:
     preco_final = valor_carro * (1 + percentual / 100)
     valor_parcela = preco_final / parcelas
     print(f"{parcelas:>10}x | R$ {preco_final:>12.2f} | R$ {valor_parcela:>17.2f}")
+

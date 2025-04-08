@@ -48,3 +48,4 @@ else:
 
         print(f"\nAplicação {tipo_nome} - Isenta de imposto de renda.")
         print(f"Valor resgatado: R$ {valor_resgate:.2f}")
+
