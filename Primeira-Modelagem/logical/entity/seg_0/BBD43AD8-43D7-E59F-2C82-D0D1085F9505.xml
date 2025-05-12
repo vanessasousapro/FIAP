@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BBD43AD8-43D7-E59F-2C82-D0D1085F9505" name="T_FUNCIONARIO">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:50:37 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_matricula" id="98155899-0921-13CB-5F64-19BDC3A79FF2">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:50:55 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_depto" id="C1AE034F-CC94-7999-4F4E-34CF96DF12AF">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:52:31 UTC</createdTime>
+<generatorID>E8172518-A3B1-213F-A9DE-1B9FC3480C47</generatorID>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<referedAttribute>B2D1CE3B-AFB0-2D82-BFE4-07344CE17761</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_funcionario" id="99AAEBE1-58A6-5B0E-A3E8-B03EF5F1C71D">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:51:05 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_admissao" id="D96E45C7-65C7-8221-D908-A0B9B7BCCEEA">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:51:23 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="20A4921E-3E91-DAA5-84FE-35E10C61C4EE" name="T_FUNCIONARIO PK">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:50:56 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>98155899-0921-13CB-5F64-19BDC3A79FF2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

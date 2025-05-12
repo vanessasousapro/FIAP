@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="773B7366-533E-CC7D-8A16-C7BF8CD03741" name="T_PRODUTO">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 22:06:52 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_produto" id="BE5951D9-115B-839A-EC53-7DBC8BA21B5E">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 22:07:10 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_produto" id="0AAEB886-DD54-6F35-02B3-9CF67B454692">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 22:07:24 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_produto" id="48DEB329-DC2F-7DF3-0C1B-0267E16691E6">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 22:07:35 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_produto" id="F20FA71C-DF39-4282-CD83-FFBF179429D5">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 22:07:45 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3683B824-C95B-3368-0491-1509405A366A" name="T_PRODUTO PK">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 22:07:13 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BE5951D9-115B-839A-EC53-7DBC8BA21B5E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

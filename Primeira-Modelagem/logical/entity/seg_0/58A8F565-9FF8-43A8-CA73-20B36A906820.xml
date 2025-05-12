@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="58A8F565-9FF8-43A8-CA73-20B36A906820" name="T_DEPARTAMENTO">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:47:51 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_depto" id="B2D1CE3B-AFB0-2D82-BFE4-07344CE17761">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:48:35 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_depto" id="565C1AAC-CA22-10D4-2289-366C29D36C14">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:49:00 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="517BEE9C-4957-ED13-D7CE-5326ACE4EF1D" name="T_DEPARTAMENTO PK">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-09 21:48:44 UTC</createdTime>
+<ownerDesignName>Primeira-Modelagem</ownerDesignName>
+<engineerTo>
+<item key="5E7B2698-8F10-AA25-A410-4B6D15B7767B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B2D1CE3B-AFB0-2D82-BFE4-07344CE17761</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
