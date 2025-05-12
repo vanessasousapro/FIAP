@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="agenda_contacts" id="65418AE2-759B-6BC3-36EC-3013E55D5BB6" version="3.5">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-12 00:10:36 UTC</createdTime>
+<ownerDesignName>agenda_contacts</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>65418AE2-759B-6BC3-36EC-3013E55D5BB6</designId>
+</OSDM_Design>
