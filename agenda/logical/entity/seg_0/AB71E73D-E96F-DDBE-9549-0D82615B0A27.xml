@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB71E73D-E96F-DDBE-9549-0D82615B0A27" name="phone">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-12 00:37:02 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<engineerTo>
+<item key="595D0823-C914-0C33-7A96-A690457CD134" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="C9B66B35-DA3B-B7F2-D42B-9E34A1B68C00">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-12 00:37:09 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<engineerTo>
+<item key="595D0823-C914-0C33-7A96-A690457CD134" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="number" id="0C6C2C02-7779-81C2-8A16-2D86469FD30B">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-12 00:37:26 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<engineerTo>
+<item key="595D0823-C914-0C33-7A96-A690457CD134" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="967BCE76-A52D-010D-B2BF-694B7416D91D">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-12 00:45:13 UTC</createdTime>
+<generatorID>B82DA88C-E520-C449-B975-817AA31839C3</generatorID>
+<ownerDesignName>agenda</ownerDesignName>
+<engineerTo>
+<item key="595D0823-C914-0C33-7A96-A690457CD134" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>539D760C-6905-3D47-1955-565ADE2B8724</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4AC7BF91-D54E-AF0C-8BFB-45395C3EF1CC" name="phone PK">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-12 00:37:24 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<engineerTo>
+<item key="595D0823-C914-0C33-7A96-A690457CD134" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C9B66B35-DA3B-B7F2-D42B-9E34A1B68C00</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

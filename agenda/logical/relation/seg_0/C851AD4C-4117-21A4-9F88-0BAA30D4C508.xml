@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contact_have_address" directorySegmentName="seg_0" id="C851AD4C-4117-21A4-9F88-0BAA30D4C508">
+<createdBy>vanes</createdBy>
+<createdTime>2025-05-12 00:50:13 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<engineerTo>
+<item key="595D0823-C914-0C33-7A96-A690457CD134" value="true"/>
+</engineerTo>
+<sourcePk>242DE817-95C0-0E15-3197-3DF186261A8F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>id</nameOnSource>
+<nameOnTarget>contact_id</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>39DB849D-2A08-5CF2-F7E7-9777C2C8D1C0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D06996A4-9B83-29FC-1F29-A2368A6CF463</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
