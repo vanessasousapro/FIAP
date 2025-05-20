@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Primeira-Modelagem" id="2C0D6448-FA0B-73B1-E018-22AB0870B799" version="3.5">
-<createdBy>vanes</createdBy>
-<createdTime>2025-05-09 17:59:25 UTC</createdTime>
-<ownerDesignName>Primeira-Modelagem</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>2C0D6448-FA0B-73B1-E018-22AB0870B799</designId>
-</OSDM_Design>
