@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="D06996A4-9B83-29FC-1F29-A2368A6CF463" name="address" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2196135D-460E-9F81-D08C-89245E1B2AC8" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="39DB849D-2A08-5CF2-F7E7-9777C2C8D1C0" name="contact" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2196135D-460E-9F81-D08C-89245E1B2AC8" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="AB71E73D-E96F-DDBE-9549-0D82615B0A27" name="phone" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2196135D-460E-9F81-D08C-89245E1B2AC8" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="C851AD4C-4117-21A4-9F88-0BAA30D4C508" name="contact_have_address" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="2196135D-460E-9F81-D08C-89245E1B2AC8" propertySourceId="39DB849D-2A08-5CF2-F7E7-9777C2C8D1C0" propertyTargetId="D06996A4-9B83-29FC-1F29-A2368A6CF463"/>
+   <object objectType="Relation" objectID="B82DA88C-E520-C449-B975-817AA31839C3" name="contact_have_phones" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="2196135D-460E-9F81-D08C-89245E1B2AC8" propertySourceId="39DB849D-2A08-5CF2-F7E7-9777C2C8D1C0" propertyTargetId="AB71E73D-E96F-DDBE-9549-0D82615B0A27"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
