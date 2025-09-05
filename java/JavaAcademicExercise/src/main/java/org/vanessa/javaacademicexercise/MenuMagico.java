@@ -2,7 +2,7 @@ package org.vanessa.javaacademicexercise;
 
 import java.util.Scanner;
 
-public class Menu {
+public class MenuMagico {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         PersonagemMagico personagem = new PersonagemMagico();
