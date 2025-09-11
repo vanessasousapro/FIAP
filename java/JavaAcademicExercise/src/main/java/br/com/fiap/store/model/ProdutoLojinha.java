@@ -1,4 +1,4 @@
-package org.vanessa.javaacademicexercise;
+package br.com.fiap.store.model;
 
 //Crie uma classe chamada Produto que represente um produto em uma loja.
 //O produto deve ter os seguintes atributos:
