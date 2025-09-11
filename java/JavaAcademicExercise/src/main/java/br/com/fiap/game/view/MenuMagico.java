@@ -11,7 +11,7 @@ public class MenuMagico {
         int opcao;
         PersonagemMagico personagemMagico = new PersonagemMagico();
         do {
-            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Atacar \n4-Aumentar Energia \n5- Ativar Habilidade Especial \n6-Habilitar a Habilidade Especial \n0-Sair");
+            System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Atacar \n4-Aumentar Energia \n5-Ativar Habilidade Especial \n6-Habilitar a Habilidade Especial \n0-Sair");
             opcao = input.nextInt();
 
             switch (opcao) {
@@ -22,10 +22,7 @@ public class MenuMagico {
                     String poder = input.next() + input.nextLine();
                     System.out.println("Digite o nível de energia do personagem: ");
                     int energia = input.nextInt();
-                    personagemMagico.nome = nome;
-                    personagemMagico.nivelEnergia = energia;
-                    personagemMagico.poderMagico = poder;
-
+                    personagemMagico.setNome(nome).setNivelEnergia(energia).setPoderMagico(poder);
                     System.out.println("Digite o nome da habilidade especial: ");
                     String nomeHabilidade = input.next() + input.nextLine();
                     System.out.println("Digite o custo para usar a habilidade especial: ");
@@ -36,11 +33,16 @@ public class MenuMagico {
                     //Criando o objeto que reoresenta a habilidade especial com os valores informados pelo usuário
                     HabilidadeEspecial habilidadeEspecial = new HabilidadeEspecial(nomeHabilidade, nivelEnergia, ativada);
                     //Atribuindo o objeto habilidade especial ao personagemMagico
-                    personagemMagico.habilidadeEspecial = habilidadeEspecial;
+                    personagemMagico.setHabilidadeEspecial(habilidadeEspecial);
                     break;
                 case 2:
-                    System.out.println("Nome: " + personagemMagico.nome + " Poder: " + personagemMagico.poderMagico + " Nivel de energia: " + personagemMagico.nivelEnergia);
-                    System.out.println(" Habilidade: " + personagemMagico.habilidadeEspecial.nome + " Custo de energia: " + personagemMagico.habilidadeEspecial.custoEnergia + " Habilitada? " + personagemMagico.habilidadeEspecial.habilitada);
+                    System.out.println("Nome: " + personagemMagico.getNome() + " Poder: " + personagemMagico.getPoderMagico() + " Nivel de energia: " + personagemMagico.getNivelEnergia());
+                    HabilidadeEspecial h = personagemMagico.getHabilidadeEspecial();
+                    if (h != null) {
+                        System.out.println("Habilidade: " + h.getNome() + " | Custo de Energia: " + h.getCustoEnergia() + " | Habilidata: " + h.isHabilitada());
+                    } else {
+                        System.out.println("Habilidade: (Nenhuma Habilidade Cadastrada)");
+                    }
                     break;
                 case 3:
                     System.out.println("Digite o nome do ataque: ");
@@ -57,8 +59,13 @@ public class MenuMagico {
                     personagemMagico.ativarHabilidadeEspecial();
                     break;
                 case 6:
-                    personagemMagico.habilidadeEspecial.ativarHabilidade();
-                    System.out.println("A Habilidade está Habilitada!");
+                    HabilidadeEspecial he = personagemMagico.getHabilidadeEspecial();
+                    if (he != null) {
+                        he.ativarHabilidade();
+                        System.out.println("A Habilidade está Ativada!");
+                    } else {
+                        System.out.println("Cadastre uma Habilidade Primeiro! (Opção 1)");
+                    }
                     break;
                 case 0:
                     System.out.println("Finalizando o programa");
