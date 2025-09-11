@@ -1,4 +1,6 @@
-package org.vanessa.javaacademicexercise;
+package br.com.fiap.store.view;
+
+import br.com.fiap.store.model.ProdutoLojinha;
 
 import java.util.Scanner;
 

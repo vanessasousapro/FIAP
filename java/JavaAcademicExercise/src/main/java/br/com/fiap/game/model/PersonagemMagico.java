@@ -1,11 +1,11 @@
-package org.vanessa.javaacademicexercise;
+package br.com.fiap.game.model;
 
 public class PersonagemMagico {
     //Atributos
-    String nome;
-    int nivelEnergia;
-    String poderMagico;
-    HabilidadeEspecial habilidadeEspecial;
+    public String nome;
+    public int nivelEnergia;
+    public String poderMagico;
+    public HabilidadeEspecial habilidadeEspecial;
 
     //Construtores
     public PersonagemMagico(String nome, int nivelEnergia, String poderMagico) {

@@ -1,9 +1,9 @@
-package org.vanessa.javaacademicexercise;
+package br.com.fiap.game.model;
 
 public class HabilidadeEspecial {
-    String nome;
-    int custoEnergia;
-    boolean habilitada;
+    public String nome;
+    public int custoEnergia;
+    public boolean habilitada;
 
     public HabilidadeEspecial(String nome, int custoEnergia, boolean habilidade) {
         this.nome = nome;

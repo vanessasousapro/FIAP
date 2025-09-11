@@ -1,12 +1,15 @@
-package org.vanessa.javaacademicexercise;
+package br.com.fiap.game.view;
+
+import br.com.fiap.game.model.HabilidadeEspecial;
+import br.com.fiap.game.model.PersonagemMagico;
 
 import java.util.Scanner;
 
 public class MenuMagico {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        PersonagemMagico personagem = new PersonagemMagico();
         int opcao;
+        PersonagemMagico personagemMagico = new PersonagemMagico();
         do {
             System.out.println("Escolha uma opção: \n1-Cadastrar Personagem \n2-Exibir Personagem \n3-Atacar \n4-Aumentar Energia \n5- Ativar Habilidade Especial \n6-Habilitar a Habilidade Especial \n0-Sair");
             opcao = input.nextInt();
@@ -19,9 +22,9 @@ public class MenuMagico {
                     String poder = input.next() + input.nextLine();
                     System.out.println("Digite o nível de energia do personagem: ");
                     int energia = input.nextInt();
-                    personagem.nome = nome;
-                    personagem.nivelEnergia = energia;
-                    personagem.poderMagico = poder;
+                    personagemMagico.nome = nome;
+                    personagemMagico.nivelEnergia = energia;
+                    personagemMagico.poderMagico = poder;
 
                     System.out.println("Digite o nome da habilidade especial: ");
                     String nomeHabilidade = input.next() + input.nextLine();
@@ -32,29 +35,29 @@ public class MenuMagico {
 
                     //Criando o objeto que reoresenta a habilidade especial com os valores informados pelo usuário
                     HabilidadeEspecial habilidadeEspecial = new HabilidadeEspecial(nomeHabilidade, nivelEnergia, ativada);
-                    //Atribuindo o objeto habilidade especial ao personagem
-                    personagem.habilidadeEspecial = habilidadeEspecial;
+                    //Atribuindo o objeto habilidade especial ao personagemMagico
+                    personagemMagico.habilidadeEspecial = habilidadeEspecial;
                     break;
                 case 2:
-                    System.out.println("Nome: " + personagem.nome + " Poder: " + personagem.poderMagico + " Nivel de energia: " + personagem.nivelEnergia);
-                    System.out.println(" Habilidade: " + personagem.habilidadeEspecial.nome + " Custo de energia: " + personagem.habilidadeEspecial.custoEnergia + " Habilitada? " + personagem.habilidadeEspecial.habilitada);
+                    System.out.println("Nome: " + personagemMagico.nome + " Poder: " + personagemMagico.poderMagico + " Nivel de energia: " + personagemMagico.nivelEnergia);
+                    System.out.println(" Habilidade: " + personagemMagico.habilidadeEspecial.nome + " Custo de energia: " + personagemMagico.habilidadeEspecial.custoEnergia + " Habilitada? " + personagemMagico.habilidadeEspecial.habilitada);
                     break;
                 case 3:
                     System.out.println("Digite o nome do ataque: ");
                     String ataque = input.next() + input.nextLine();
-                    personagem.atacar(ataque);
+                    personagemMagico.atacar(ataque);
                     break;
                 case 4:
                     System.out.println("Digite a quantidade de energia: ");
                     int qtd = input.nextInt();
-                    int nivelAtual = personagem.aumentarEnergia(qtd);
+                    int nivelAtual = personagemMagico.aumentarEnergia(qtd);
                     System.out.println("Nível atual de energia: " + nivelAtual);
                     break;
                 case 5:
-                    personagem.ativarHabilidadeEspecial();
+                    personagemMagico.ativarHabilidadeEspecial();
                     break;
                 case 6:
-                    personagem.habilidadeEspecial.ativarHabilidade();
+                    personagemMagico.habilidadeEspecial.ativarHabilidade();
                     System.out.println("A Habilidade está Habilitada!");
                     break;
                 case 0:

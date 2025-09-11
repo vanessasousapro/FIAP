@@ -1,4 +1,6 @@
-package org.vanessa.javaacademicexercise;
+package br.com.fiap.game.view;
+
+import br.com.fiap.game.model.PersonagemMagico;
 
 public class Main {
     public static void main(String[] args) {
