@@ -13,6 +13,11 @@ public class PratoQuente extends Produto{
         this.serve = serve;
     }
 
+    @Override
+    public String getResumo() {
+        return "Nome: " + this.getNome() + "\nIngredientes: " + this.getIngredientes() + "\nPreço: " + this.getPreco() + "\nQuantidade: " + this.getServe();
+    }
+
     public int getServe() {
         return serve;
     }
