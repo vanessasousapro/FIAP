@@ -11,6 +11,11 @@ public class Bebida extends Produto{
         this.quantidade = quantidade;
     }
 
+    @Override
+    public String getResumo() {
+        return "Nome: " + this.getNome() + "\nIngredientes: " + this.getIngredientes() + "\nPreço: R$" + this.getPreco() + "\nQuantidade: " + this.getQuantidade() + "ml";
+    }
+
     public int getQuantidade() {
         return quantidade;
     }

@@ -2,6 +2,7 @@ package br.com.fiap.restaurant.view;
 
 import br.com.fiap.restaurant.model.Bebida;
 import br.com.fiap.restaurant.model.PratoQuente;
+import br.com.fiap.restaurant.model.Produto;
 
 public class MainRestaurant {
     public static void main(String[] args) {
@@ -11,6 +12,7 @@ public class MainRestaurant {
         System.out.println("A Bebida é Composta por: " + bebida.getIngredientes());
         System.out.println("E custa R$ " + bebida.getPreco());
         System.out.println("E a sua quantidade é de: " + bebida.getQuantidade() + "ml");
+        System.out.println(bebida.getResumo());
 
         PratoQuente prato = new PratoQuente();
         prato.setNome("Omelete");
@@ -22,5 +24,6 @@ public class MainRestaurant {
         System.out.println("É comporto por: " + prato.getIngredientes());
         System.out.println("E custa R$ " + prato.getPreco());
         System.out.println("E serve " + prato.getServe() + " pessoas");
+        System.out.println(prato.getResumo());
     }
 }

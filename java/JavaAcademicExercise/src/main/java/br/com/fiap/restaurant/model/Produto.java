@@ -1,6 +1,6 @@
 package br.com.fiap.restaurant.model;
 
-public class Produto {
+public abstract class Produto {
 
     private String nome;
     private String ingredientes;
@@ -15,6 +15,8 @@ public class Produto {
         this.ingredientes = ingredientes;
         this.preco = preco;
     }
+
+    public abstract String getResumo();
 
     public String getNome() {
         return nome;
