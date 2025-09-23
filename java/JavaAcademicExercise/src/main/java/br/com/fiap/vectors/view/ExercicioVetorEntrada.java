@@ -1,4 +1,4 @@
-package br.com.fiap.vectors.model;
+package br.com.fiap.vectors.view;
 
 import java.util.Scanner;
 
